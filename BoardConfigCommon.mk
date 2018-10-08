@@ -30,6 +30,9 @@
 
 LOCAL_PATH := device/htc/m7-common
 
+# Kernel name
+BOARD_KERNEL_IMAGE_NAME := zImage
+
 # Audio
 BOARD_HAVE_HTC_CSDCLIENT := true
 USE_CUSTOM_AUDIO_POLICY := 1
