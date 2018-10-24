@@ -143,6 +143,9 @@ on init
     # connection tracking to treat them as INVALID packet
     write /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal 1
 
+    # NETWORK: Wifi firmware reload path
+    chown wifi wifi /sys/module/bcmdhd/parameters/firmware_path
+
     # Camera
     chown media system /sys/camera_htccallback/htccallback
     chmod 0660 /sys/camera_htccallback/htccallback
